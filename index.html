@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Wish</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="container">
+        <form onsubmit="return getInput('list', this.petInput)">
+            <input id="petInput" type="text" placeholder="Enter your favorite pet" autocomplete="off" />
+            <input type="submit" value="add" />
+        </form>
+
+        <p>Click an animal to remove it.</p>
+        <ul id="list">
+            <li class="original">tiger</li>
+            <li class="original">lion</li>
+            <li class="original">bear</li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</body>
+
+</html>
